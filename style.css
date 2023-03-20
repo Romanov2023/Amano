@@ -1,0 +1,59 @@
+ body {
+    background-image: url("AMANO_ADA-1200x918.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center top;
+    background-attachment: scroll;
+}
+
+h1 {
+    text-align: center;
+    border-color: black;
+    border-style: solid; /* Стиль границы */
+    background-color: darkgrey;
+    border-width: medium;
+}
+h2 {
+    text-align: center;
+    color: azure;
+}
+h3 {
+    text-align: center;
+    color: azure;
+    font-size: 18px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.box {
+  background-color: #000;
+    background: none;
+    margin: auto;
+}
+path {
+  stroke: green;
+  stroke-width: 2px;
+  stroke-dasharray: 6000;
+  stroke-dashoffset: 6000;
+  animation: draw 7s linear forwards;
+
+}
+@keyframes draw {
+   20% {
+      stroke: orange;
+   }
+   40% {
+      stroke: blue;
+   }
+   60% {
+      stroke: indigo;
+   }
+   80% {
+      stroke: violet;
+   }
+   100% {
+      stroke: white;
+      stroke-dashoffset: 0;
+   }
+}
